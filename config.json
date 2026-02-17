@@ -1,0 +1,26 @@
+{
+	"aim": {
+"screenName": "AOLLM",
+		"password": "botpass123",
+		"serverAddr": "localhost:5190",
+"profile": "AOLLM - AI chatbot from 2003",
+		"awayMessage": "hey im a 2003 aim bot lol send me msgs :P"
+	},
+	"llm": {
+		"useLocal": true,
+		"local": {
+			"url": "http://localhost:5001/v1/",
+			"model": "local-model"
+		},
+		"web": {
+			"apiKey": "",
+			"baseURL": "",
+			"model": ""
+		}
+	},
+	"typingDelay": {
+		"minMs": 1000,
+		"maxMs": 3000,
+		"perCharMs": 50
+	}
+}

@@ -1,0 +1,4 @@
+github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
+github.com/google/uuid v1.6.0/go.mod h1:TIyPZe4MgqvfeYDBFedMoGGpEw/LqOeaOT+nhxU+yHo=
+github.com/mk6i/open-oscar-server v0.22.0 h1:9zVaP5+QA0q6cZNH3bc6WDYgtc6S0jrFW+Y4PURrfb4=
+github.com/mk6i/open-oscar-server v0.22.0/go.mod h1:A4E6RjbFl3tAm9CgTRMovh9eCXCzFnFn72zd8hscv1A=
