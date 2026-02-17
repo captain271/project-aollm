@@ -39,6 +39,21 @@ ollama serve
 ```
 Then change config.json URL to `http://localhost:11434/api/chat`
 
+**Option D: Using Web APIs (OpenAI, Groq, etc.)**
+
+To use a web API instead of a local LLM:
+
+```json
+"llm": {
+  "useLocal": false,
+  "web": {
+    "apiKey": "your-api-key-here",
+    "baseURL": "https://api.openai.com/v1",
+    "model": "gpt-4o-mini"
+  }
+}
+```
+
 ### 2. Configure the Bot
 
 Edit `config.json`:
@@ -163,34 +178,13 @@ $env:GOOS="darwin"; $env:GOARCH="arm64"; go build -o builds/aollm-macos-arm64 ma
 $env:GOOS="linux"; $env:GOARCH="amd64"; go build -o builds/aollm-linux main.go
 ```
 
-## Using Web APIs (OpenAI, Groq, etc.)
-
-To use a web API instead of a local LLM:
-
-```json
-"llm": {
-  "useLocal": false,
-  "web": {
-    "apiKey": "your-api-key-here",
-    "baseURL": "https://api.openai.com/v1",
-    "model": "gpt-4o-mini"
-  }
-}
-```
-
-Popular options:
-- **OpenAI**: `https://api.openai.com/v1` with `gpt-4o-mini`
-- **Groq**: `https://api.groq.com/openai/v1` with `llama-3.1-8b-instant`
-- **Together AI**: `https://api.together.xyz/v1` with various models
-
 ## Setting Up an AIM Server
 
 This bot requires an OSCAR-compatible server. We recommend [open-oscar-server](https://github.com/mk6i/open-oscar-server):
 
 1. Download the latest release
 2. Run `open_oscar_server.exe`
-3. Create accounts via the web interface (usually at http://localhost:8080)
-4. Update `config.json` with your server's address
+3. Update `config.json` in the AOLLM project folder with your server's address
 
 ## Troubleshooting
 
@@ -223,4 +217,5 @@ MIT License - Feel free to modify and distribute!
 ## Credits
 
 - OSCAR protocol implementation based on [open-oscar-server](https://github.com/mk6i/open-oscar-server)
+
 - Built with Go
