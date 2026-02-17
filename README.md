@@ -1,5 +1,7 @@
 # project-aollm
 
+**NOTE: I had vibecoded this project (Yeah, I am a loser :P) But feel free to make it better!**
+
 An AI-powered AIM bot that connects to OSCAR-compatible servers and responds to instant messages using a local LLM (like KoboldCPP, LM Studio, or Ollama).
 
 ## Features
@@ -219,3 +221,4 @@ MIT License - Feel free to modify and distribute!
 - OSCAR protocol implementation based on [open-oscar-server](https://github.com/mk6i/open-oscar-server)
 
 - Built with Go
+
